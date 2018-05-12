@@ -2,7 +2,7 @@
 require "yaml"
 def load_library
   # code goes here
-  emoticon = YAML::load('./lib/emoticons.yml')
+  emoticon = YAML::load_file(File.join(./lib, 'emoticons.yml'))
   emoticon
 end
 
